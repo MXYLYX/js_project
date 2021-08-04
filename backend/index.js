@@ -26,7 +26,7 @@ app.get('/', (request, response) =>{
 const https = require('https')
 // https.createServer(app).listen(443)
 
-app.listen(2000, ()=>{
+app.listen(80, ()=>{
     console.log(`启动监听`);
 });
 

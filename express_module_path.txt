@@ -1,0 +1,13 @@
+https://newbedev.com/express-module-not-found-when-installed-with-npm
+
+解释: 如果你当前目录下没有express, 也就是你安装express用的命令是
+npm install -g express(全局安装)
+那么当前目录下就是找不到express module
+解决办法在上面的连接
+
+创建个文件夹(下面的命令叫"your_app", 可以随便改)
+express your_app 
+
+cd your_app
+
+npm link express(这样的话express 会小点)
