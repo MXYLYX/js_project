@@ -8,5 +8,29 @@
 </head>
 <body>
     <div>gugugu bu xi huan wo</div>
+
+    <button class='btn-btn-primary'>GET</button>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+
+    <script>
+        var btn1 = document.querySelector('.btn-btn-primary');
+
+        btn1.onclick = function(){
+                axios.get('http://www.mxylyx.com/axios?getMethod=321&getAge=33', {
+                    withCredentials: true,
+                // params:{
+                //     ip: 7,
+                //     data: 'axios html'
+                // },
+                // headers:{
+                //     name : 'jack',
+                //     age : 30
+                // }
+            }).then(value =>{
+                console.log(value);
+            });
+        };
+    </script>
+
 </body>
 </html>
