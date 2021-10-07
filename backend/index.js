@@ -21,8 +21,7 @@ app.get('/', (request, response) =>{
             throw err;  
         }  
         response.end(data);  
-    });  
-
+    });
 });
 
 app.get('/axios', (request, response) =>{
